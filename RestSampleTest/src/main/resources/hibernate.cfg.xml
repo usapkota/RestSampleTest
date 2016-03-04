@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+		<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="hibernate.connection.url">jdbc:sqlserver://SAS-SIS-D01\SSIS_DEV;databaseName=ujwaltest;integratedSecurity=true</property>
+		<!-- <property name="hibernate.connection.url">jdbc:sqlserver://WKS18153;databaseName=ujwaltest;integratedSecurity=true</property> -->
+		<!-- <property name="hibernate.connection.username"></property> -->
+		<!-- <property name="hibernate.connection.password"></property> -->
+		<property name="connection.pool_size">1</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="org.sample.rest.RestSampleTest.model.UserDetails" />
+		<!-- <mapping class="org.sample.rest.RestSampleTest.model.UserDetails" 
+			/> -->
+
+	</session-factory>
+</hibernate-configuration> 
