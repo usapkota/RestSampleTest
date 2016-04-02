@@ -54,6 +54,27 @@ public class UserResource {
   public UserDetails getUserByIdJSON( @ApiParam(value = "Id of User Details", required = true) @PathVariable int id){
       return userservice.getUserByID(id);
   }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	
   /*
   

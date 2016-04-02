@@ -1,6 +1,7 @@
 package org.sample.rest.RestSampleTest.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -54,6 +55,8 @@ public class UserDetails {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+
+
 	
 	
 
