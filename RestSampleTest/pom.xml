@@ -27,7 +27,20 @@
 <!--             </exclusions> -->
 <!--         </dependency> -->
 
+        <dependency>
+            <groupId>com.lumeris.innovation</groupId>
+            <artifactId>com.lumeris.innovation.core.library</artifactId>
+            <version>1.0.0.106</version>
 
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-nop</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -170,7 +183,10 @@
             <id>spring-snapshot</id>
             <url>https://repo.spring.io/libs-snapshot</url>
         </repository>
-        
+         <repository>
+            <id>innovation.repo</id>
+            <url>file:\\act-bld-d01.devapp.domain\maven-repo</url>
+        </repository> 
     </repositories>
     <pluginRepositories>
 <!--         <pluginRepository> -->
